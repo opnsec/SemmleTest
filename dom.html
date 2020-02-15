@@ -94,7 +94,11 @@
 
 		<script>
 			
-			eval(document.location.hash.substring(1));
+      eval(document.location.hash.substring(1));
+      var second = document.location.hash.substring(1);
+      eval(encodeURI(second));
+      var third = second.substring(2,10);
+      location = third;
 
 		var h = document.location.hash.substring(1);
 		if (h && h != "") {
